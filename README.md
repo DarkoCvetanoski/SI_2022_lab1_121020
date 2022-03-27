@@ -1,1 +1,1 @@
-# SI_2022_lab1_121020
+Darko Cvetanoski 121020
