@@ -1,5 +1,5 @@
-Jabolka
-Banani
-Bademi
-Leshnici
-Portokali
+Jabolka x 5
+Banani x 10
+Bademi x 20
+Leshnici x 30
+Portokali x 6
