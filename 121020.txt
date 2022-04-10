@@ -292,16 +292,32 @@ To github.com:DarkoCvetanoski/SI_2022_lab1_121020.git
    de598dc..5624d8b  master -> master
 - синхронизација на гранката мастер со репозиториумот
 
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
 $ git checkout branch1
 - префрлување на првата гранка
 
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
 $ git push origin branch1
+Everything up-to-date
 - синхронизирање на прва гранка
 
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
 $ git checkout branch2
 - префрлување на втората гранка
 
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch2)
 $ git push origin branch2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 364 bytes | 364.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:DarkoCvetanoski/SI_2022_lab1_121020.git
+   0f780bc..0769cce  branch2 -> branch2
 - синхронизација на втората гранка
 
 
