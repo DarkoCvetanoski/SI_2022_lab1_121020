@@ -1,0 +1,270 @@
+
+4. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020
+$ git init
+Initialized empty Git repository in C:/Users/Dare-Care/Documents/GitHub/SI_2022_lab1_121020/.git/
+- иницијализација на локален директориум
+4.1 Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git remote add origin git@github.com:DarkoCvetanoski/SI_2022_lab1_121020.git
+- поврзување со оддалечениот директориум
+4.2 Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git status
+- проверка на статусот на мастер гранката
+
+4.3 Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git pull origin master
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (11/11), 2.42 KiB | 91.00 KiB/s, done.
+From github.com:DarkoCvetanoski/SI_2022_lab1_121020
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+- превземање податоци од оддалечениот директориум локално
+
+5. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git add shopping_list.txt
+- додавање на текстуална датотека
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   shopping_list.txt
+
+
+5.1 Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git commit -m "Add 5 items to the shopping list"
+[master 06ff8e9] Add 5 items to the shopping list
+   1 file changed, 0 insertions(+), 0 deletions(-)
+   create mode 100644 shopping_list.txt
+- креирање на комит со порака
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git add shopping_list.txt
+
+6. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git commit -m "Add quantities to the items"
+[master 0f780bc] Add quantities to the items
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+ - креирање на комит со порака
+7. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git branch branch1
+- креирање на бранч 1
+7.1 Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git branch branch2
+ - креирање на бранч 2
+9. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 665 bytes | 665.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:DarkoCvetanoski/SI_2022_lab1_121020.git
+   ec80b46..0f780bc  master -> master
+- Синхронизација на гранката мастер
+9.1 Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+- префрлување на првата гранка
+
+9.2 Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
+$ git push origin branch1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch1' on GitHub by visiting:
+remote:      https://github.com/DarkoCvetanoski/SI_2022_lab1_121020/pull/new/branch1
+remote:
+To github.com:DarkoCvetanoski/SI_2022_lab1_121020.git
+ * [new branch]      branch1 -> branch1
+- синхронизација на првата гранка
+
+9.3 Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
+$ git checkout branch2
+Switched to branch 'branch2'
+- префрлување на втората гранка
+
+9.4 Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch2)
+$ git push origin branch2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'branch2' on GitHub by visiting:
+remote:      https://github.com/DarkoCvetanoski/SI_2022_lab1_121020/pull/new/branch2
+remote:
+To github.com:DarkoCvetanoski/SI_2022_lab1_121020.git
+ * [new branch]      branch2 -> branch2
+- синхронизација на втората гранка
+
+10.Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch2)
+$ git checkout branch1
+Switched to branch 'branch1'
+- префрлување на првата гранка
+
+11. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
+$ git add shopping_list.txt
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
+$ git commit -m "Change quantity of item #5"
+[branch1 ee923ee] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+- креирање комит со коментар
+
+12. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
+$ git checkout master
+Switched to branch 'master'
+- Враќање во мастер гранката
+
+13.
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git commit -m "Change quantity of item #2"
+[master de598dc] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-Креирање комит со коментар
+
+
+14.
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:DarkoCvetanoski/SI_2022_lab1_121020.git
+   0f780bc..de598dc  master -> master
+- Синхронизација на гранката мастер
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+- префрлување на првата гранка
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
+$ git push origin branch1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 330 bytes | 330.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:DarkoCvetanoski/SI_2022_lab1_121020.git
+   0f780bc..ee923ee  branch1 -> branch1
+-синхронизација на првата гранка
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
+$ git checkout branch2
+Switched to branch 'branch2'
+-префрлување на втората гранка
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch2)
+$ git push origin branch2
+- синхронизација на втората гранка
+
+
+15. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
+$ git checkout branch2
+-префрлување на втората гранка
+
+16. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch2)
+$ git commit -m "Modify item #4"
+[branch2 1ff3737] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+- креирање комит со порака
+
+18. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch2)
+$ git commit --amend -m "Modify item #4 and add item #6"
+[branch2 988800c] Modify item #4 and add item #6
+ Date: Tue Apr 5 22:41:39 2022 +0200
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+- креирање на комит со порака
+
+20. Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (branch1)
+$ git checkout master
+Switched to branch 'master'
+- префрлување на гранката мастер
+
+$git merge branch1
+E325: ATTENTION
+Found a swap file by the name "C:/Users/Dare-Care/Documents/GitHub/SI_2022_lab1_
+121020/.git/.MERGE_MSG.swp"
+          owned by: Dare-Care   dated: Sat Apr 09 18:53:47 2022
+         file name: ~Dare-Care/Documents/GitHub/SI_2022_lab1_121020/.git/MERGE_M
+SG
+          modified: YES
+         user name: Dare-Care   host name: DESKTOP-AHOMOBG
+        process ID: 1925
+While opening file "C:/Users/Dare-Care/Documents/GitHub/SI_2022_lab1_121020/.git
+/MERGE_MSG"
+             dated: Sun Apr 10 22:27:26 2022
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r C:/Users/Dare-Care/Documents/
+GitHub/SI_2022_lab1_121020/.git/MERGE_MSG"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "C:/Users/Dare-Care/Documents/
+GitHub/SI_2022_lab1_121020/.git/.MERGE_MSG.swp"
+ Recover file
+
+Swap file "C:/Users/Dare-Care/Documents/GitHub/SI_2022_lab1_121020/.git/.COMMIT_
+EDITMSG.swp" already exists!
+<ts/GitHub/SI_2022_lab1_121020/.git/COMMIT_EDITMSG" [unix] 14L, 366Bbort:
+Swap files found:
+   Using specified name:
+1.    .COMMIT_EDITMSG.swo
+          owned by: Dare-Care   dated: Sat Apr 09 18:41:21 2022
+         file name: ~Dare-Care/Documents/GitHub/SI_2022_lab1_121020/.git/COMMIT_
+EDITMSG
+          modified: YES
+         user name: Dare-Care   host name: DESKTOP-AHOMOBG
+        process ID: 1650
+2.    .COMMIT_EDITMSG.swp
+          owned by: Dare-Care   dated: Sun Apr 10 22:23:12 2022
+         file name: ~Dare-Care/Documents/GitHub/SI_2022_lab1_121020/.git/COMMIT_
+         file name: ~Dare-Care/Documents/GitHub/SI_2022_lab1_121020/.git/COMMIT_
+  ITMSG
+-- More --
+
+Enter number of swap file to use (0 to quit): 2
+Using swap file "C:/Users/Dare-Care/Documents/GitHub/SI_2022_lab1_121020/.git/.C
+OMMIT_EDITMSG.swp"
+Original file "~/Documents/GitHub/SI_2022_lab1_121020/.git/COMMIT_EDITMSG"
+E308: Warning: Original file may have been changed
+Recovery completed. You should check if everything is OK.
+(You might want to write out this file under another name
+and run diff with the original file to check for changes)
+You may want to delete the .swp file now.
+
+- овде избираме опција 2 да направиме recover на вториот фајл
+
+
+$  git update-ref -d MERGE_HEAD
+- откако ќе ги разрешиме конфликтите ја користиме оваа команда
+
+21.Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git merge branch2
+Your local changes to the following files would be overwritten by merge:
+  shopping_list.txt
+- спојување со втората гранка
+
+Dare-Care@DESKTOP-AHOMOBG MINGW64 ~/Documents/GitHub/SI_2022_lab1_121020 (master)
+$ git commit -m "Conflicts fixed"
+[master 152b45b] Conflicts fixed
+ 1 file changed, 6 insertions(+)
+- комитирање со порака
+
+22. 
+
