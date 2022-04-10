@@ -1,5 +1,11 @@
 Jabolka x 5
 Banani x 15
 Bademi x 20
+<<<<<<< HEAD
 Leshnici x 30
 Portokali x 3
+=======
+Fstaci x 30
+Portokali x 3
+Kivi 
+>>>>>>> branch2
