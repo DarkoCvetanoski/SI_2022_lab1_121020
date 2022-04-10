@@ -292,6 +292,17 @@ To github.com:DarkoCvetanoski/SI_2022_lab1_121020.git
    de598dc..5624d8b  master -> master
 - синхронизација на гранката мастер со репозиториумот
 
+$ git checkout branch1
+- префрлување на првата гранка
+
+$ git push origin branch1
+- синхронизирање на прва гранка
+
+$ git checkout branch2
+- префрлување на втората гранка
+
+$ git push origin branch2
+- синхронизација на втората гранка
 
 
 
